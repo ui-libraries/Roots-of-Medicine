@@ -1,0 +1,53 @@
+header#masthead {
+  z-index: 1111;
+  display: block;
+  position: relative;
+  height: 100px;
+
+  .search-toggle {
+    display: none;
+  }
+
+  .header-content {
+    display: block;
+    position: relative;
+
+    .site-title {
+      padding: 15px;
+      width: 60%;
+    
+      a {
+        display: block;
+
+        svg .roots-wordmark {
+          fill: $color-black;
+          transition: 0.2s;
+          stroke: $color-black;
+          stroke-width: 24;
+          pointer-events: all;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: none !important;
+          
+          svg .roots-wordmark {
+            fill: darken($color-green, 10%);
+            stroke: darken($color-green, 10%);
+          }
+        }
+      }
+    }
+  }
+
+  .main-header-right-side {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transform: translateY(0);
+    
+    .header-search {
+      display: none;
+    }
+  }
+}

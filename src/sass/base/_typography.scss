@@ -1,0 +1,50 @@
+$font-headers-site:     'Flamenco';
+$font-headers-brand:    'Antonio';
+$font-body:             'Roboto', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@300;700&family=Flamenco:wght@300;400&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+html {
+  font-size: 62.5%;  // sets up the Base 10 stuff
+}
+
+// resets
+body, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	font-family: $font-body;
+  @include font-size(1);
+
+	.small-type,
+	&.small-type {
+		@include font-size(0.8);
+	}
+}
+
+#content article {
+
+  h1 {
+    font-family: $font-headers-site;
+    @include font-size(2.8);
+    font-weight: bolder;
+    color: $color-black;
+  }
+
+  .entry-title {
+    font-family: $font-headers-site;
+    @include font-size(3.2);
+    font-weight: bolder;
+    color: $color-black;
+  }
+
+  h2, h2>strong {
+    margin-top: 2rem;
+    font-family: $font-headers-site;
+    @include font-size(2.4);
+    font-weight: bolder;
+    color: $color-black;
+  }
+
+  figcaption, figcaption a, figcaption em {
+    font-family: $font-body;
+    @include font-size(0.8);
+  }
+}

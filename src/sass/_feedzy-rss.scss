@@ -1,0 +1,24 @@
+// "!importants" are used when overriding the Feedzy plugin's stupid inline styles.
+.feedzy-rss {
+
+  >ul {
+    margin: 0;
+    padding: 0 0 0 0;
+
+    >li.rss_item {
+      margin: 0;
+      padding: 1.2em 0 1em 0 !important;
+      border-bottom: 1px solid #999;
+    
+      .title a {
+        font-weight: bolder;
+        @include font-size(1);
+      }
+
+      .rss_content {
+      
+      }
+    }
+  }
+  
+}

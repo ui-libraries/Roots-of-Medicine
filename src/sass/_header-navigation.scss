@@ -1,0 +1,149 @@
+header#masthead {
+
+  .main-header-right-side {
+  
+    nav#primary-navigation {
+      padding: 0;
+      width: 100%;
+
+      button.nav-toggle {
+        display: block;
+        float: right;
+        height: 60px;
+        min-width: 80px;
+        line-height: 60px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.2em;
+        background-color: $color-black;
+        color: white;
+
+        svg {
+          margin-bottom: -8px;
+          height: 30px;
+          width: 24px;
+          fill: white;
+        }
+
+        >strong {
+          padding-left: 8px;
+          @include hide-offscreen;
+        }
+
+        &:hover, &:focus {
+          opacity : 1 !important;
+          background-color: $color-black;
+        }
+
+        @include breakpoint($medium-width) {
+          
+          >strong {
+            @include show-onscreen;
+          }
+        }
+      }
+
+      &.COLLAPSED {
+
+        button.nav-toggle {
+        
+          svg.close-nav {
+            display: none;
+          }
+        }
+
+        .menu-top-menu-container #menu-top-menu {
+          display: none;
+        }
+      }
+      &:not(.COLLAPSED) {
+        
+        button.nav-toggle {
+
+          svg.hamburger-nav {
+            display: none;
+          }
+        }
+      }
+      
+      .menu-top-menu-container {
+
+        #menu-top-menu {
+          max-width: 100%;
+        }
+        
+        >ul >li >a {
+          display: none;
+        }
+
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          clear: both;
+
+          li {
+          
+            ul.sub-menu {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(95%, 1fr));
+              grid-gap: 4px;
+              float: right;
+              background-color: $color-black;
+              border: 4px solid $color-black;
+              width: 300px;
+
+              >li {
+                margin: 0;
+                padding: 0;
+                
+                &.current-menu-item a,
+                &.current-menu-item a:hover {
+                  color: white;
+                  background-color: darken($color-green, 10%);
+                }
+
+                &:first-child {
+                  grid-column: 1/-1;
+                }
+
+                a {
+                  display: block;
+                  margin: 0;
+                  padding: 1.4em;
+                  text-align: center;
+                  line-height: 1em;
+                  background-color: $color-green;
+                  transition: 0.2s;
+                  color: white;
+
+                  &:hover {
+                    color: white;
+                    background-color: lighten($color-green, 23%);
+                    color: $color-black;
+                    text-decoration: none;
+                  }
+                }
+              }
+
+              @include breakpoint($small-width) {
+                grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+                width: $small-width - 50px;
+              }
+              @include breakpoint($medium-width) {
+                grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+                width: $medium-width - 100px;
+              }
+              @include breakpoint($fixed-width) {
+                // grid-template-columns: repeat(auto-fit, minmax(21%, 1fr));
+                // width: $fixed-width - 100px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

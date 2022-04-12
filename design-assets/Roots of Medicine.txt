@@ -1,0 +1,34 @@
+# Roots of Medicine
+Generated with ColorSlurp
+
+*Black*
+HEX: #000000
+RGB: 0, 0, 0, 100
+
+*Eclipse*
+HEX: #36241a
+RGB: 54, 36, 26, 100
+
+*Metallic Bronze*
+HEX: #502f1b
+RGB: 80, 47, 27, 100
+
+*Woodland*
+HEX: #4b5729
+RGB: 75, 87, 41, 100
+
+*Costa Del Sol*
+HEX: #626634
+RGB: 98, 102, 52, 100
+
+*Copper Canyon*
+HEX: #7a3715
+RGB: 122, 55, 21, 100
+
+*Sepia Skin*
+HEX: #a16e3a
+RGB: 161, 110, 58, 100
+
+*Sisal*
+HEX: #d4cdbc
+RGB: 212, 205, 188, 100
