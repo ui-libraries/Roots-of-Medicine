@@ -2,36 +2,78 @@
   margin-top: 0;
   padding: 0;
   background-color: #111;
-  height: 300px;
+  height: 480px;
   z-index: 9999;
   
-  .site-footer-container {
-    @include clearfix;
-    background-color: #111;
+  // .site-footer-container {
+  //   @include clearfix;
+  //   background-color: #111;
 
-    .lockups {
-      padding: 2rem 0;
-      text-align: center;
+  //   .lockups {
+  //     padding: 2rem 0;
+  //     text-align: center;
     
-      a {
-        transition: 0.2s;
+  //     a {
+  //       transition: 0.2s;
 
-        .lockup {
-          margin: 3rem 6rem 0 ;
-          width: 240px;
+  //       .lockup {
+  //         margin: 3rem 6rem 0 ;
+  //         width: 240px;
           
-          // &-pharmacy {}
-          // &-hardin {}
-        }
+  //         // &-pharmacy {}
+  //         // &-hardin {}
+  //       }
 
-        &:hover {
-          opacity: 0.75;
+  //       &:hover {
+  //         opacity: 0.75;
+  //       }
+  //     }
+  //   }
+  // }
+
+  .site-info { 
+    // display: none;
+
+    background-color: transparent;
+    border-top: 0px solid transparent;
+
+    .footer-menu {
+      float: none;
+
+      ul#menu-footer-menu {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        max-width: 100%;
+        text-align: center;
+      
+        li {
+          flex: 1;
+          margin: 0 3rem;
+
+          a {
+            display: inline-block;
+            @include clearfix;
+            color: transparent; 
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 240px;
+            transition: 0.2s;
+
+            &:hover {
+              opacity: 0.666;
+            }
+          }
+
+          &:nth-of-type(1) a {
+            background-image: url('https://roots.local/wp-content/uploads/2022/04/pharmacy-lockup.png');
+          }
+
+          &:nth-of-type(2) a {
+            background-image: url('https://roots.local/wp-content/uploads/2022/04/hardin-lockup.png');
+          }
         }
       }
     }
   }
-}
-
-.site-info { 
-  display: none;
 }

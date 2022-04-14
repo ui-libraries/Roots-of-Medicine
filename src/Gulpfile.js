@@ -11,8 +11,8 @@ var todo = require('gulp-todo');
 
 
 var sassPath = './sass/**/*.scss';
-var cssPathRepo = './css/';
-var cssPathLocal = '/Users/clinkenb/DevKinsta/public/roots/wp-content/themes/roots-longform-child/';
+// var cssPathRepo = './css/';
+var cssPath = '/Users/clinkenb/DevKinsta/public/roots/wp-content/themes/roots-longform-child/';
 
 var sassOptions = {
     includePaths: [
@@ -41,9 +41,9 @@ gulp.task('sass', function () {
         .pipe(sass(sassOptions).on('error', sass.logError))
         .pipe(autoprefixer(autoprefixerOptions))
         .pipe(s)
-        .pipe(sourcemaps.write('../css_sourcemaps/'))
-        .pipe(gulp.dest(cssPathLocal))
-        .pipe(gulp.dest(cssPathRepo));
+        .pipe(sourcemaps.write('./css_sourcemaps/'))
+        // .pipe(gulp.dest(cssPathLocal))
+        .pipe(gulp.dest(cssPath));
 });
 
 gulp.task('todo', function() {

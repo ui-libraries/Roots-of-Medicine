@@ -326,7 +326,7 @@ body.home #landingPage-photo {
   position: absolute;
   right: 0;
   bottom: 300px;
-  background-image: url("https://roots.local/wp-content/uploads/2022/04/roots-home-plant.png");
+  background-image: url("https://dsps.lib.uiowa.edu/roots/wp-content/uploads/sites/73/2022/04/roots-home-plant.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -412,4 +412,4 @@ figure > img + figcaption {
   margin-top: -1em !important;
 }
 
-/*# sourceMappingURL=../css_sourcemaps/style.css.map */
+/*# sourceMappingURL=css_sourcemaps/style.css.map */
