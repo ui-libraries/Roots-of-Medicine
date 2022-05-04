@@ -58,7 +58,7 @@ body.home {
         font-family: $font-headers-brand !important;
         text-transform: uppercase;
         @include font-size(2.2);
-        border-bottom: 4px solid $color-hawk-gold;
+        border-bottom: 4px solid $hawk-gold;
       }
 
       p {

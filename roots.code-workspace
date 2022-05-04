@@ -2,6 +2,9 @@
   "folders": [
     {
       "path": "."
+    },
+    {
+      "path": "../../../../DevKinsta/public/roots/wp-content/themes/roots-longform-child"
     }
   ]
 }
