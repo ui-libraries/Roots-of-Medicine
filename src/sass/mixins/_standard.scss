@@ -22,8 +22,10 @@
   width: 1px;
 }
 @mixin show-onscreen {
-    position: inherit;
-    height: auto;
-    overflow: inherit;
-    width: auto;
+  position: inherit;
+  height: auto;
+  overflow: inherit;
+  width: auto;
+  left: auto;
+  top: auto;
 }

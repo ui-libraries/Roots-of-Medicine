@@ -1,0 +1,26 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+.skip-to-page-content,
+.skip-to-primary-nav {
+  @include hide-offscreen;
+
+  &:focus {
+    @include show-onscreen;
+    font-weight: bold;  
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
