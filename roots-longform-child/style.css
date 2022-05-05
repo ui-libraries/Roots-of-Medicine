@@ -1,0 +1,561 @@
+/*
+ Theme Name:   Roots of Medicine
+ Description:  Longform child theme
+ Author:       The Studio
+ Template:     longform
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ Text Domain:  longform-child
+*/
+@import url("https://fonts.googleapis.com/css2?family=Flamenco&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Flamenco&family=Josefin+Sans:ital,wght@0,100;0,400;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@300;700&family=Flamenco:wght@300;400&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-size: 1rem;
+}
+
+body .small-type, body.small-type, html .small-type, html.small-type, body .small-type, body.small-type, div .small-type, div.small-type, span .small-type, span.small-type, applet .small-type, applet.small-type, object .small-type, object.small-type, iframe .small-type, iframe.small-type, h1 .small-type, h1.small-type, h2 .small-type, h2.small-type, h3 .small-type, h3.small-type, h4 .small-type, h4.small-type, h5 .small-type, h5.small-type, h6 .small-type, h6.small-type, p .small-type, p.small-type, blockquote .small-type, blockquote.small-type, pre .small-type, pre.small-type, a .small-type, a.small-type, abbr .small-type, abbr.small-type, acronym .small-type, acronym.small-type, address .small-type, address.small-type, big .small-type, big.small-type, cite .small-type, cite.small-type, code .small-type, code.small-type, del .small-type, del.small-type, dfn .small-type, dfn.small-type, em .small-type, em.small-type, font .small-type, font.small-type, ins .small-type, ins.small-type, kbd .small-type, kbd.small-type, q .small-type, q.small-type, s .small-type, s.small-type, samp .small-type, samp.small-type, small .small-type, small.small-type, strike .small-type, strike.small-type, strong .small-type, strong.small-type, sub .small-type, sub.small-type, sup .small-type, sup.small-type, tt .small-type, tt.small-type, var .small-type, var.small-type, dl .small-type, dl.small-type, dt .small-type, dt.small-type, dd .small-type, dd.small-type, ol .small-type, ol.small-type, ul .small-type, ul.small-type, li .small-type, li.small-type, fieldset .small-type, fieldset.small-type, form .small-type, form.small-type, label .small-type, label.small-type, legend .small-type, legend.small-type, table .small-type, table.small-type, caption .small-type, caption.small-type, tbody .small-type, tbody.small-type, tfoot .small-type, tfoot.small-type, thead .small-type, thead.small-type, tr .small-type, tr.small-type, th .small-type, th.small-type, td .small-type, td.small-type {
+  font-size: 8px;
+  font-size: 0.8rem;
+}
+
+#content article h1 {
+  font-family: "Flamenco";
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-weight: bolder;
+  color: #111;
+}
+
+#content article .entry-title {
+  font-family: "Flamenco";
+  font-size: 32px;
+  font-size: 3.2rem;
+  font-weight: bolder;
+  color: #111;
+}
+
+#content article h2, #content article h2 > strong {
+  margin-top: 2rem;
+  font-family: "Flamenco";
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: bolder;
+  color: #111;
+}
+
+#content article p {
+  margin: 0;
+}
+
+#content article figcaption, #content article figcaption a, #content article figcaption em {
+  font-family: "Roboto", sans-serif;
+  font-size: 8px;
+  font-size: 0.8rem;
+}
+
+.feedzy-rss > ul {
+  margin: 0;
+  padding: 0 0 0 0;
+}
+
+.feedzy-rss > ul > li.rss_item {
+  margin: 0;
+  padding: 1.2em 0 1em 0 !important;
+  border-bottom: 1px solid #999;
+}
+
+.feedzy-rss > ul > li.rss_item .title a {
+  font-weight: bolder;
+  font-size: 10px;
+  font-size: 1rem;
+}
+
+header#masthead {
+  z-index: 1111;
+  display: block;
+  position: relative;
+  height: 100px;
+}
+
+header#masthead .search-toggle {
+  display: none;
+}
+
+header#masthead .header-content {
+  display: block;
+  position: relative;
+}
+
+header#masthead .header-content .site-title {
+  padding: 15px;
+  width: 40%;
+}
+
+header#masthead .header-content .site-title a {
+  display: block;
+}
+
+header#masthead .header-content .site-title a svg .roots-wordmark {
+  fill: #111;
+  transition: 0.2s;
+  stroke: #111;
+  stroke-width: 24;
+  pointer-events: all;
+}
+
+header#masthead .header-content .site-title a:hover {
+  cursor: pointer;
+  background-color: none !important;
+}
+
+header#masthead .header-content .site-title a:hover svg .roots-wordmark {
+  fill: #2d3419;
+  stroke: #2d3419;
+}
+
+header#masthead .main-header-right-side {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  -ms-transform: translateY(0);
+      transform: translateY(0);
+}
+
+header#masthead .main-header-right-side .header-search {
+  display: none;
+}
+
+header#masthead .main-header-right-side nav#primary-navigation {
+  padding: 0;
+  width: 100%;
+}
+
+header#masthead .main-header-right-side nav#primary-navigation button.nav-toggle {
+  display: block;
+  float: right;
+  height: 60px;
+  min-width: 80px;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: #111;
+  color: white;
+}
+
+header#masthead .main-header-right-side nav#primary-navigation button.nav-toggle svg {
+  margin-bottom: -8px;
+  height: 30px;
+  width: 24px;
+  fill: white;
+}
+
+header#masthead .main-header-right-side nav#primary-navigation button.nav-toggle > strong {
+  padding-left: 8px;
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+}
+
+header#masthead .main-header-right-side nav#primary-navigation button.nav-toggle:hover, header#masthead .main-header-right-side nav#primary-navigation button.nav-toggle:focus {
+  opacity: 1 !important;
+  background-color: #111;
+}
+
+@media (min-width: 800px) {
+  header#masthead .main-header-right-side nav#primary-navigation button.nav-toggle > strong {
+    position: inherit;
+    height: auto;
+    overflow: inherit;
+    width: auto;
+    left: auto;
+    top: auto;
+  }
+}
+
+header#masthead .main-header-right-side nav#primary-navigation.COLLAPSED button.nav-toggle svg.close-nav {
+  display: none;
+}
+
+header#masthead .main-header-right-side nav#primary-navigation.COLLAPSED .menu-top-menu-container #menu-top-menu {
+  display: none;
+}
+
+header#masthead .main-header-right-side nav#primary-navigation:not(.COLLAPSED) button.nav-toggle svg.hamburger-nav {
+  display: none;
+}
+
+header#masthead .main-header-right-side nav#primary-navigation .menu-top-menu-container #menu-top-menu {
+  max-width: 100%;
+}
+
+header#masthead .main-header-right-side nav#primary-navigation .menu-top-menu-container > ul > li > a {
+  display: none;
+}
+
+header#masthead .main-header-right-side nav#primary-navigation .menu-top-menu-container ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  clear: both;
+}
+
+header#masthead .main-header-right-side nav#primary-navigation .menu-top-menu-container ul li ul.sub-menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(95%, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(95%, 1fr));
+  grid-gap: 4px;
+  float: right;
+  background-color: #111;
+  border: 4px solid #111;
+  width: 300px;
+}
+
+header#masthead .main-header-right-side nav#primary-navigation .menu-top-menu-container ul li ul.sub-menu > li {
+  margin: 0;
+  padding: 0;
+}
+
+header#masthead .main-header-right-side nav#primary-navigation .menu-top-menu-container ul li ul.sub-menu > li.current-menu-item a,
+header#masthead .main-header-right-side nav#primary-navigation .menu-top-menu-container ul li ul.sub-menu > li.current-menu-item a:hover {
+  color: white;
+  background-color: #2d3419;
+}
+
+header#masthead .main-header-right-side nav#primary-navigation .menu-top-menu-container ul li ul.sub-menu > li:first-child {
+  grid-column: 1/-1;
+}
+
+header#masthead .main-header-right-side nav#primary-navigation .menu-top-menu-container ul li ul.sub-menu > li a {
+  display: block;
+  margin: 0;
+  padding: 1.4em;
+  text-align: center;
+  line-height: 1em;
+  background-color: #4B5729;
+  transition: 0.2s;
+  color: white;
+}
+
+header#masthead .main-header-right-side nav#primary-navigation .menu-top-menu-container ul li ul.sub-menu > li a:hover {
+  color: white;
+  background-color: #90a74f;
+  color: #111;
+  text-decoration: none;
+}
+
+@media (min-width: 500px) {
+  header#masthead .main-header-right-side nav#primary-navigation .menu-top-menu-container ul li ul.sub-menu {
+    -ms-grid-columns: (minmax(45%, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    width: 450px;
+  }
+}
+
+@media (min-width: 800px) {
+  header#masthead .main-header-right-side nav#primary-navigation .menu-top-menu-container ul li ul.sub-menu {
+    -ms-grid-columns: (minmax(30%, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    width: 700px;
+  }
+}
+
+.site-footer-wrapper {
+  margin-top: 0;
+  padding: 0;
+  background-color: #111;
+  height: 480px;
+  z-index: 9999;
+}
+
+.site-footer-wrapper .site-info {
+  background-color: transparent;
+  border-top: 0px solid transparent;
+}
+
+.site-footer-wrapper .site-info .footer-menu {
+  float: none;
+}
+
+.site-footer-wrapper .site-info .footer-menu ul#menu-footer-menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+  max-width: 100%;
+  text-align: center;
+}
+
+.site-footer-wrapper .site-info .footer-menu ul#menu-footer-menu li {
+  -ms-flex: 1;
+      flex: 1;
+  margin: 0 3rem;
+}
+
+.site-footer-wrapper .site-info .footer-menu ul#menu-footer-menu li a {
+  display: inline-block;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 240px;
+  transition: 0.2s;
+}
+
+.site-footer-wrapper .site-info .footer-menu ul#menu-footer-menu li a:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.site-footer-wrapper .site-info .footer-menu ul#menu-footer-menu li a:hover {
+  opacity: 0.666;
+}
+
+.site-footer-wrapper .site-info .footer-menu ul#menu-footer-menu li:nth-of-type(1) a {
+  background-image: url("https://dsps.lib.uiowa.edu/roots/wp-content/uploads/sites/73/2022/04/pharmacy-lockup.png");
+}
+
+.site-footer-wrapper .site-info .footer-menu ul#menu-footer-menu li:nth-of-type(2) a {
+  background-image: url("https://dsps.lib.uiowa.edu/roots/wp-content/uploads/sites/73/2022/04/hardin-lockup.png");
+}
+
+body.home {
+  background-color: #D4CDBC;
+}
+
+body.home #page {
+  position: relative;
+}
+
+body.home #masthead {
+  height: 180px;
+  background-color: #D4CDBC;
+}
+
+body.home #masthead .site-title {
+  width: 60%;
+  max-width: 1000px;
+}
+
+body.home #landingPage-photo {
+  position: absolute;
+  right: 0;
+  bottom: 480px;
+  background-image: url("https://dsps.lib.uiowa.edu/roots/wp-content/uploads/sites/73/2022/04/roots-home-plant.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 52%;
+  z-index: 0;
+}
+
+body.home #landingPage-photo > img {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  body.home #landingPage-photo {
+    display: block;
+    z-index: 101;
+    width: 52%;
+  }
+}
+
+body.home #main {
+  margin: 0 0 0 0;
+  width: 100%;
+}
+
+body.home #main #content {
+  margin-top: 0;
+}
+
+body.home #main #entry-content-wrapper {
+  padding: 16px 32px;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+body.home #main #entry-content-wrapper h2 {
+  padding-bottom: 6px;
+  display: inline-block;
+  color: #111;
+  font-family: "Antonio" !important;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-size: 2.2rem;
+  border-bottom: 4px solid #ffcd00;
+}
+
+body.home #main #entry-content-wrapper p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 800px) {
+  body.home #main {
+    margin: 0 0 0 48px;
+    width: 50%;
+  }
+  body.home #main #content {
+    margin-top: 100px;
+  }
+  body.home #main #entry-content-wrapper {
+    padding: 48px;
+  }
+  body.home #main article.hentry .edit-link {
+    text-align: left !important;
+  }
+}
+
+.scrolltop-wrap {
+  box-sizing: border-box;
+  position: absolute;
+  top: 40rem;
+  right: 2rem;
+  bottom: 0;
+  pointer-events: none;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.scrolltop-wrap #scrolltop-bg {
+  fill: #ffcd00;
+}
+
+.scrolltop-wrap #scrolltop-arrow {
+  fill: black;
+}
+
+.scrolltop-wrap a:hover #scrolltop-bg {
+  fill: #cca400;
+}
+
+.scrolltop-wrap a:hover #scrolltop-arrow {
+  fill: black;
+}
+
+@supports (-moz-appearance: meterbar) {
+  .scrolltop-wrap {
+    clip: rect(0, 4rem, auto, 0);
+  }
+}
+
+.scrolltop-wrap a {
+  position: fixed;
+  position: sticky;
+  top: -6rem;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: -6rem;
+  -ms-transform: translateY(100vh);
+      transform: translateY(100vh);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: all;
+  outline: none;
+  overflow: hidden;
+}
+
+.scrolltop-wrap a svg {
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.scrolltop-wrap a svg path {
+  transition: all 0.1s;
+}
+
+.scrolltop-wrap a #scrolltop-arrow {
+  -ms-transform: scale(0.8);
+      transform: scale(0.8);
+  -ms-transform-origin: center;
+      transform-origin: center;
+}
+
+@media print {
+  .scrolltop-wrap {
+    display: none !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+.skip-to-page-content,
+.skip-to-primary-nav {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+}
+
+.skip-to-page-content:focus,
+.skip-to-primary-nav:focus {
+  position: inherit;
+  height: auto;
+  overflow: inherit;
+  width: auto;
+  left: auto;
+  top: auto;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+.copyright, .header-search, #post-155 .entry-header {
+  display: none;
+}
+
+#landingPage-photo img {
+  width: 100%;
+}
+
+.content-area {
+  width: 100%;
+}
+
+.entry-content {
+  display: inline-block;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+figure > img + figcaption {
+  margin-top: -1em !important;
+}
+
+/*# sourceMappingURL=css_sourcemaps/style.css.map */

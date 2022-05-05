@@ -1,0 +1,184 @@
+/*
+ Theme Name:   Roots of Medicine
+ Description:  Longform child theme
+ Author:       The Studio
+ Template:     longform
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ Text Domain:  longform-child
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&family=Josefin+Sans:ital,wght@0,100;0,400;1,300;1,400&display=swap');
+
+.copyright, .header-search, #post-155 .entry-header{
+    display: none;
+}
+
+#primary-navigation{
+    float: right;
+}
+
+.site-title{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.menu-item:hover, .site-navigation > div > ul > li > a:after, a:hover{
+    background-color: #ddbc02;
+}
+
+body, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td{
+    font-family: 'Lato', sans-serif!important;
+}
+
+#landingPage-photo img{
+    width: 100%;
+}
+#plant-list {
+    padding-top: 100px;
+}
+
+body, p, a, .rss_description {
+    font-family: ‘Flamenco’, cursive !important;
+    font-family: ‘Josefin Sans’, sans-serif !important;
+    font-size: x-large;
+}
+
+figcaption {
+    font-family: ‘Flamenco’, cursive !important;
+    font-family: ‘Josefin Sans’, sans-serif !important;
+    font-size: x-small !important;
+}
+
+h2 {
+    font-family: 'Flamenco', cursive !important;
+    font-size: 45px !important;
+    font-weight: 800 !important;
+}
+
+h2 strong, em {
+    font-family: 'Flamenco', cursive !important;
+    font-size: 25px !important;
+    font-weight: 800 !important;
+}
+
+h2 strong em {
+    font-family: 'Flamenco', cursive !important;
+    font-size: 25px !important;
+    font-weight: 800 !important;
+}
+
+.entry-title {
+    font-family: 'Flamenco', cursive !important;
+    font-size: 72px !important ;
+    font-weight: bolder !important;
+}
+
+body, p, a, .rss_description {
+    font-family: 'Flamenco', cursive !important;
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-size: x-large;
+    width: 100%;
+}
+
+figcaption {
+    font-family: 'Flamenco', cursive !important;
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-size: x-small !important;
+}
+
+figcaption a {
+    font-family: 'Flamenco', cursive !important;
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-size: x-small !important;
+}
+
+figcaption em {
+    font-family: 'Flamenco', cursive !important;
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-size: x-small !important;
+}
+
+.content-area {
+    width: 100%;
+}
+
+.entry-content {
+    display: inline-block;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+
+@media only screen and (max-width: 380px) {
+    #landingPage-photo img{
+        display: none;
+    }
+    #plant-list {
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (min-width: 381px) and (max-width: 480px) {
+    #landingPage-photo img{
+        display: none;
+    }
+    #plant-list {
+        padding-top: 0px;
+    }
+    .entry-content {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        overflow-wrap: break-word;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 700px) {
+}
+
+@media only screen and (min-width: 701px)
+and (max-width: 992px) {
+    #primary-navigation {
+        display: none!important;
+    }
+    #plant-list {
+        padding-top: 0px;
+    }
+    .entry-content {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        overflow-wrap: break-word;
+    }
+}
+
+@media only screen and (min-width: 993px)
+and (max-width: 1349px) {
+
+}
+
+@media only screen and (min-width: 1350px)
+and (max-width: 2399px) {
+
+}
+
+@media only screen and (min-width: 2400px)
+and (max-width: 5000px) {
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+@media all and (-ms-high-contrast: none),
+       (-ms-high-contrast: active) {
+    /*IE10+ CSS styles go here*/
+
+}  

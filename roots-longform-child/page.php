@@ -38,10 +38,35 @@ global $longform_site_width;
 	</div><!-- #primary -->
 </div><!-- #main-content -->
 
+<div class="scrolltop-wrap">
+	<a href="#page-top" role="button" aria-label="Scroll to top">
+		<svg height="48" viewBox="0 0 48 48" width="48" height="48px" xmlns="http://www.w3.org/2000/svg">
+			<path id="scrolltop-bg" d="M0 0h48v48h-48z"></path>
+			<path id="scrolltop-arrow" d="M14.83 30.83l9.17-9.17 9.17 9.17 2.83-2.83-12-12-12 12z"></path>
+		</svg>
+	</a>
+</div>
 
+<script>
+jQuery(document).ready(function($){
 
+	function togglePrimaryNav($clickTarget) {
+		if ($("button.nav-toggle").parent("#primary-navigation").hasClass("COLLAPSED")) {
+			$("button.nav-toggle").attr("aria-expanded","true");
+			console.log("Menu EXPANDED!");
+		} else {
+			$("button.nav-toggle").attr("aria-expanded","false");
+			console.log("Menu COLLAPSED!");
+		}
+		$("#primary-navigation").toggleClass("COLLAPSED");
+	}
+
+	$("button.nav-toggle").click(function() {
+		togglePrimaryNav();
+	});
+
+});
+</script>
 
 <?php
 get_footer();
-
-
